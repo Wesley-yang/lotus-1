@@ -744,7 +744,7 @@ func (s *SplitStore) trackTxnRefMany(cids []cid.Cid) {
 					quiet = true
 					log.Warnf("error checking markset: %s", err)
 				}
-				continue
+				// track it anyways
 			}
 
 			if mark {
